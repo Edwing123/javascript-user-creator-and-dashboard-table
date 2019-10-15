@@ -93,7 +93,7 @@ function insertDataToDashboard(headings, users, dashboard) {
   })
 }
 
-function createUserRow(user) {createUserRow
+function createUserRow(user) {
   let row = createDashboardRow()
   let name = user.name,
   age = user.age,
