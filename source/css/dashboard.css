@@ -1,0 +1,47 @@
+.dashboard {
+  width: 100%;
+  margin: 80px auto 0;
+}
+
+.dashboardRow {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 0 15px;
+  cursor: pointer;
+}
+
+.dashboardRow:hover {
+  background-color: #3369e7;
+  color: #fff;
+  transition: .2s all linear;
+}
+
+.dashboardColumn {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboardHeading {
+  text-transform: uppercase;
+}
+
+.dashboardRow--headings {
+  background-color: #00aeff;
+  color: #fff;
+  padding: 20px 0;
+  margin: 0;
+}
+
+.dashboardImage {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.dashboardText {
+  text-align: center;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="author" content="Edwing123" />
+  <meta name="description" content="simple user creator/registration and dashboar/table with information of the created users" />
+  <link rel="canonical" href="https://mi-portafolio123.000webhostapp.com/" />
+  <base href="/" />
+  <title>Home - profile/user creator</title>
+  <link rel="stylesheet" href="./source/css/utils.css" />
+  <link rel="stylesheet" href="./source/css/main.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 class="coolTitle">Profile creator</h1>
+      <nav class="navigationMenu">
+        <a href="/" class="navigation__link active--page">Home</a>
+        <a href="./pages/profiles.html" class="navigation__link">Dashboard</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="section">
+        <h2 class="sectionTitle">Introduction</h2>
+        <p>
+          Create a profile with user information
+          by giving a name, age, country and an icon
+          image.
+        </p>
+      </div>
+      <div class="section">
+        <h2 class="sectionTitle">Creator</h2>
+        <form class="form" id="userForm" onsubmit="return false">
+          <div class="formGroup">
+            <label for="username" class="formLabel">Username</label>
+            <input type="text" class="formInput" id="username" name="username" />
+            <small class="formWarning" id="usernameWarning"></small>
+          </div>
+          <div class="formGroup">
+            <label for="age" class="formLabel">Age</label>
+            <input type="number" class="formInput" id="age" name="age" />
+            <small class="formWarning" id="ageWarning"></small>
+          </div>
+          <div class="formGroup">
+            <label for="country" class="formLabel">Country</label>
+            <input type="text" class="formInput" id="country" name="country" />
+            <small class="formWarning" id="countryWarning"></small>
+          </div>
+          <div class="formGroup">
+            <label for="picture" class="formLabel">User picture</label>
+            <input type="file" accept="image/*" class="formInput" id="picture" name="picture" />
+            <small class="formWarning" id="pictureWarning"></small>
+          </div>
+          <div class="formGroup align-right">
+            <button class="formButton" id="createButton">
+              create
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </div>
+
+  <script src="./source/js/db.js"></script>
+  <script src="./source/js/form-validation.js"></script>
+  <script src="./source/js/utils.js"></script>
+  <script src="./source/js/main.js" defer></script>
+</body>
+</html>

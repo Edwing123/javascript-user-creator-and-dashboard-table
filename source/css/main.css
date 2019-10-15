@@ -1,0 +1,164 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1rem;
+  background-color: #0079c1;
+  font-family: cursive;
+
+}
+
+/* specifics styles for webpage */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #f2f6fa;
+}
+
+.header {
+  padding: 20px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.navigationMenu {
+  text-align: right;
+}
+
+.navigation__link {
+  display: inline-block;
+  margin: 0 0 0 10px;
+  color: #24292e;
+  text-decoration: none;
+  font-size: 1.2em;
+  overflow: hidden;
+}
+
+.navigation__link:hover {
+  color: #146eb4;
+}
+
+.active--page {
+  position: relative;
+  display: inline-block;
+  color: #146eb4;
+}
+
+.active--page::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  transform: rotate(-12deg);
+  transform-origin: left;
+  background-color: #24292e;
+}
+
+.coolTitle {
+  font-size: 2.8em;
+  transform: rotate(2deg);
+  transition: 0.2s all linear;
+  transform-origin: left;
+  color: #ff4c4c;
+  text-shadow: 3px 3px 2px #000;
+  cursor: pointer;
+  padding: 0px 0px 20px;
+}
+
+.coolTitle:hover {
+  transform: none;
+}
+
+.main {
+  padding: 20px;
+}
+
+.section {
+  margin-bottom: 60px;
+}
+
+.section p {
+  font-size: 1.2em;
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 1.6em;
+  margin: 0 auto 30px;
+}
+
+.form {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #feba02;
+  padding: 18px;
+  border-radius: 6px;
+}
+
+.formGroup {
+  margin: 0 auto 10px;
+}
+
+.formLabel, .formInput {
+  display: block;
+  font-size: 1.2em;
+}
+
+.formLabel {
+  margin: 0 auto 10px;
+}
+
+.formInput {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+
+.formInput:focus {
+  border: 2px solid #0099e5;
+}
+
+.formInput.border--red {
+  border: 2px solid #ff4c4c;
+}
+
+.formWarning {
+  color: #270b0b;
+  font-size: 0.9em;
+  display: inline-block;
+  margin: 4px 0;
+  visibility: hidden;
+}
+
+.formButton {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 1.2em;
+  border-radius: 4px;
+  border: none;
+  background-color: #009fe3;
+  color: #fff;
+  outline: none;
+}
+
+.formButton:hover, .formButton:disabled {
+  background-color: #0777a7;
+}

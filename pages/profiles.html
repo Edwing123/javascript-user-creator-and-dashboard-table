@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="author" content="Edwing123" />
+  <meta name="description" content="users/profiles dashboard" />
+  <link rel="canonical" href="https://mi-portafolio123.000webhostapp.com/profile.html" />
+  <base href="/" />
+  <title>Dashboard - profile/user creator</title>
+  <link rel="stylesheet" href="./source/css/utils.css" />
+  <link rel="stylesheet" href="./source/css/main.css" />
+  <link rel="stylesheet" href="../source/css/dashboard.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 class="coolTitle">Profile creator</h1>
+      <nav class="navigationMenu">
+        <a href="/" class="navigation__link">Home</a>
+        <a href="./pages/profiles.html" class="navigation__link active--page">Dashboard</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="section">
+        <h2 class="sectionTitle">Introduction</h2>
+        <p>
+          These are the users/profiles information
+          you have created so far
+        </p>
+      </div>
+      <div class="section">
+        <h2 class="sectionTitle">Dashboard/table</h2>
+        <div class="dashboard" id="dashboard">
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="../source/js/db.js"></script>
+  <script src="../source/js/form-validation.js"></script>
+  <script src="../source/js/utils.js"></script>
+  <script src="../source/js/users-main.js"></script>
+</body>
+</html>
